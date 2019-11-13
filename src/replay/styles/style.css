@@ -20,12 +20,42 @@ body {
   width: 20px;
   height: 20px;
   border-radius: 10px;
-  background: rgb(73, 80, 246);
+  /*background: rgb(73, 80, 246);*/
+  background: #ffff00;
   transform: translate(-10px, -10px);
   opacity: 0.3;
 }
 .replayer-mouse.active::after {
   animation: click 0.2s ease-in-out 1;
+}
+
+.replayer-canvas{
+  /*position:absolute;*/
+  /*background-color:green;*/
+  z-index:10;
+  /*opacity: 0.1;*/
+  /*width: 1166px;*/
+  /*height: 705px;*/
+
+}
+
+.replayer-canvas-div{
+  overflow-y: scroll;
+  position:absolute;
+  /*height: 2945px;*/
+  /*width: 1920px;*/
+}
+
+::-webkit-scrollbar {
+  /*隐藏滚轮*/
+  display: none;
+}
+
+iframe{
+  z-index:-1;
+  /*left: 0;*/
+  /*top: 0;*/
+  /*position:absolute*/
 }
 
 @keyframes click {
