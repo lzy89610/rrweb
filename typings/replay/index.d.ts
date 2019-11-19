@@ -8,6 +8,12 @@ export declare class Replayer {
     private events;
     private config;
     private mouse;
+    private canvasDiv;
+    private canvas;
+    private canvasCtx;
+    private curScrollTop;
+    private curScrollLeft;
+    private hasScrolledBetweenMouseMove;
     private emitter;
     private baselineTime;
     private lastPlayedEvent;

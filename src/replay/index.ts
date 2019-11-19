@@ -221,9 +221,10 @@ export class Replayer {
         this.iframe.width = `${dimension.width}px`;
         this.iframe.height = `${dimension.height}px`;
 
-        //canvas高度初始设置为屏幕高度。之后根据snapshot构建的body scrollHeight属性获取画幅的高度，构建canvas高度
+        //canvas初始设置为7000
         this.canvas.width = dimension.width;
-        this.canvas.height = dimension.width;
+        // this.canvas.height = dimension.width;
+        this.canvas.height = 7000;
 
         this.canvasDiv.style.height = `${dimension.height}px`;
         this.canvasDiv.style.width = `${dimension.width}px`;
@@ -333,11 +334,11 @@ export class Replayer {
         mirror.map = rebuild(event.data.node, this.iframe.contentDocument!)[1];
 
         //设置canvas画幅高度
-        if(mirror.map[1].body == undefined) {
-            this.canvas.height = 10000;
-        }else{
-            this.canvas.height = mirror.map[1].body.scrollHeight;
-        }
+        // if(mirror.map[1].body == undefined) {
+        //     this.canvas.height = 10000;
+        // }else{
+        //     this.canvas.height = mirror.map[1].body.scrollHeight;
+        // }
 
         const styleEl = document.createElement('style');
         const {documentElement, head} = this.iframe.contentDocument!;
