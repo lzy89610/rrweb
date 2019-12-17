@@ -444,9 +444,10 @@ function initInputObserver(
     let isChecked = false;
     const hasTextInput =
       MASK_TYPES.includes(type) || (target as Element).tagName === 'TEXTAREA';
+    //脱敏
     if (type === 'radio' || type === 'checkbox') {
       isChecked = (target as HTMLInputElement).checked;
-    } else if (hasTextInput && maskAllInputs) {
+    } else if (hasTextInput) {
       text = '*'.repeat(text.length);
     }
     cbWithDedup(target, { text, isChecked });
