@@ -1,4 +1,4 @@
-import { snapshot } from 'rrweb-snapshot';
+import { snapshot } from 'mywre-snapshot';
 import initObservers from './observer';
 import {
   mirror,

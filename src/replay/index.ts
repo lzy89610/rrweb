@@ -1,4 +1,4 @@
-import {rebuild, buildNodeWithSN} from 'rrweb-snapshot';
+import {rebuild, buildNodeWithSN} from 'mywre-snapshot';
 import * as mittProxy from 'mitt';
 import * as smoothscroll from 'smoothscroll-polyfill';
 import Timer from './timer';

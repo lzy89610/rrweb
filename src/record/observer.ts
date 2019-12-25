@@ -1,4 +1,4 @@
-import { INode, serializeNodeWithId, transformAttribute } from 'rrweb-snapshot';
+import { INode, serializeNodeWithId, transformAttribute } from 'mywre-snapshot';
 import {
   mirror,
   throttle,

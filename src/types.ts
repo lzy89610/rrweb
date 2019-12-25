@@ -1,4 +1,4 @@
-import { serializedNodeWithId, idNodeMap, INode } from 'rrweb-snapshot';
+import { serializedNodeWithId, idNodeMap, INode } from 'mywre-snapshot';
 
 export enum EventType {
   DomContentLoaded,

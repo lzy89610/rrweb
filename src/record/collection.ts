@@ -5,7 +5,7 @@
  * that.
  */
 
-import { INode } from 'rrweb-snapshot';
+import { INode } from 'mywre-snapshot';
 import { removedNodeMutation } from '../types';
 import { mirror } from '../utils';
 

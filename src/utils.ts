@@ -5,7 +5,7 @@ import {
   hookResetter,
   blockClass,
 } from './types';
-import { INode } from 'rrweb-snapshot';
+import { INode } from 'mywre-snapshot';
 
 export function on(
   type: string,

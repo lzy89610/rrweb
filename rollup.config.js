@@ -87,7 +87,7 @@ let configs = [
     ],
     output: [
       {
-        name: 'rrweb',
+        name: 'mywre',
         format: 'iife',
         file: pkg.unpkg,
       },
@@ -108,7 +108,7 @@ let configs = [
     ],
     output: [
       {
-        name: 'rrweb',
+        name: 'mywre',
         format: 'iife',
         file: toMinPath(pkg.unpkg),
         sourcemap: true,
@@ -191,7 +191,7 @@ if (process.env.BROWSER_ONLY) {
     ],
     output: [
       {
-        name: 'rrweb',
+        name: 'mywre',
         format: 'iife',
         file: toMinPath(pkg.unpkg),
         sourcemap: true,
